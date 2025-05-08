@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://jhperformance.fi/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
+
+# Crawl-delay
+Crawl-delay: 10 
