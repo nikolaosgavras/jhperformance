@@ -87,9 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Navbar scroll behavior
-    const navbar = document.querySelector('.navbar');
-    const navLinks = document.querySelectorAll('.nav-link');
+
     
     // Add scrolled class on scroll
     window.addEventListener('scroll', function() {
