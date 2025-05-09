@@ -54,25 +54,39 @@ document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll(); // Initial check
 
     // Form submission handling
-    const contactForm = document.getElementById('contactForm');
+    const contactForm = document.querySelector('form[action="https://api.web3forms.com/submit"]');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(this);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-
-            // Here you would typically send the data to a server
-            console.log('Form submitted:', formObject);
+            // Phone number validation
+            const phoneInput = document.getElementById('phone');
+            const phonePattern = /^[+]?[0-9\s-]+$/;
             
-            // Show success message
-            alert('Kiitos viestistäsi! Olemme yhteydessä mahdollisimman pian.');
-            this.reset();
+            if (!phonePattern.test(phoneInput.value)) {
+                phoneInput.setCustomValidity('Syötä kelvollinen puhelinnumero');
+                phoneInput.reportValidity();
+                return;
+            } else {
+                phoneInput.setCustomValidity('');
+            }
+            
+            // If validation passes, submit the form
+            this.submit();
         });
+
+        // Real-time phone number validation
+        const phoneInput = document.getElementById('phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function() {
+                const phonePattern = /^[+]?[0-9\s-]+$/;
+                if (!phonePattern.test(this.value)) {
+                    this.setCustomValidity('Syötä kelvollinen puhelinnumero');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        }
     }
 
     // Navbar background change on scroll
@@ -127,4 +141,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Membership checkbox handling
+    const membershipCheckboxes = document.querySelectorAll('.membership-radio');
+    if (membershipCheckboxes.length > 0) {
+        membershipCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    // Uncheck all other checkboxes
+                    membershipCheckboxes.forEach(otherCheckbox => {
+                        if (otherCheckbox !== this) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    }
 }); 
