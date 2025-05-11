@@ -114,6 +114,10 @@
                                     <input type="email" class="form-control" id="email" name="Sähköposti" required>
                                 </div>
                                 <div class="mb-3">
+                                    <label for="referral" class="form-label">Kuka suositteli meitä? (valinnainen)</label>
+                                    <input type="text" class="form-control" id="referral" name="Suosittelija" placeholder="Kirjoita suosittelijan nimi">
+                                </div>
+                                <div class="mb-3">
                                     <label class="form-label">Valitse jäsenyys</label>
                                     <div class="form-check mb-2">
                                         <input class="form-check-input membership-radio" type="checkbox" name="Membership" value="Silver" id="silver">
@@ -141,7 +145,7 @@
                             
                                 <!-- Honeypot Spam Protection -->
                                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            
+                                <input type="hidden" name="redirect" value="https://jhperformance.fi/formsuccess.html">
                                 <button type="submit" class="btn btn-primary w-100">Lähetä viesti</button>
                                 
                                 <p class="text-muted small mt-3 mb-0">
