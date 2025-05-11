@@ -389,23 +389,39 @@ footer a:hover i {
 }
 
 /* Common animation classes for all pages */
-h1, h2, h3, .lead, p {
+h1:not(footer h1), 
+h2:not(footer h2), 
+h3:not(footer h3), 
+.lead:not(footer .lead), 
+p:not(footer p) {
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
 }
 
 /* Remove animations from contact.html page */
-body[data-page="contact"] h1,
-body[data-page="contact"] h2,
-body[data-page="contact"] h3,
-body[data-page="contact"] .lead,
-body[data-page="contact"] p,
-body[data-page="contact"] .card,
-body[data-page="contact"] .btn,
+body[data-page="contact"] h1:not(footer h1),
+body[data-page="contact"] h2:not(footer h2),
+body[data-page="contact"] h3:not(footer h3),
+body[data-page="contact"] .lead:not(footer .lead),
+body[data-page="contact"] p:not(footer p),
+body[data-page="contact"] .card:not(footer .card),
+body[data-page="contact"] .btn:not(footer .btn),
 body[data-page="contact"] .feature-card,
 body[data-page="contact"] .service-card {
     opacity: 1;
     animation: none;
+}
+
+/* Footer specific styles to ensure no animations */
+footer h1,
+footer h2,
+footer h3,
+footer .lead,
+footer p,
+footer .card,
+footer .btn {
+    opacity: 1 !important;
+    animation: none !important;
 }
 
 /* Hero section animations */
