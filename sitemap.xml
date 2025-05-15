@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://jhperformance.fi/</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://jhperformance.fi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jhperformance.fi/"/>
     </url>
     <url>
         <loc>https://jhperformance.fi/about</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://jhperformance.fi/about"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jhperformance.fi/about"/>
     </url>
     <url>
         <loc>https://jhperformance.fi/services</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://jhperformance.fi/services"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jhperformance.fi/services"/>
     </url>
     <url>
         <loc>https://jhperformance.fi/contact</loc>
-        <lastmod>2024-03-19</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://jhperformance.fi/contact"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://jhperformance.fi/contact"/>
     </url>
 </urlset> 
