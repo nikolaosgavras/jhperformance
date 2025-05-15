@@ -209,8 +209,8 @@ main {
 
 /* Buttons */
 .btn-primary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: #B8860B !important;
+    border-color: #B8860B !important;
     padding: 0.8rem 2rem;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -220,20 +220,20 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #8B6914;  /* Darker gold */
-    border-color: #8B6914;
+    background-color: #8B6914 !important;
+    border-color: #8B6914 !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
 }
 
 .btn-outline-primary {
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: #B8860B !important;
+    border-color: #B8860B !important;
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: #B8860B !important;
+    border-color: #B8860B !important;
     color: var(--white);
 }
 
@@ -592,7 +592,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Icon Styles */
 .text-primary {
-    color: var(--secondary-color) !important;
+    color: #B8860B !important;
 }
 
 /* Background Colors */
@@ -795,7 +795,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Icon Styles */
 .text-primary {
-    color: var(--secondary-color) !important;
+    color: #B8860B !important;
 }
 
 /* Background Colors */
@@ -823,7 +823,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links */
 a {
-    color: var(--secondary-color);
+    color: #B8860B;
     transition: all 0.3s ease;
 }
 
@@ -833,11 +833,11 @@ a:hover {
 
 /* Social Media Icons */
 .social-icon {
-    color: var(--secondary-color);
+    color: #B8860B;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
     color: #8B6914;
     transform: scale(1.1);
-} 
+}
