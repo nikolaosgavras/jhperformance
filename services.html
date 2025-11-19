@@ -40,11 +40,22 @@
         "offers": [
             {
                 "@type": "Offer",
+                "name": "Silver Package - Black Friday",
+                "description": "Treeniohjelma, ruokasuunnitelma, 2x kuukaudessa tulosten seuranta ja konsultaatio, rajoitettu chättituki. BLACK FRIDAY: ILMAINEN ensimmäisille 20 henkilölle!",
+                "price": "0",
+                "priceCurrency": "EUR",
+                "priceValidUntil": "2025-12-04",
+                "validFrom": "2025-11-20",
+                "availability": "https://schema.org/LimitedAvailability"
+            },
+            {
+                "@type": "Offer",
                 "name": "Silver Package",
                 "description": "Treeniohjelma, ruokasuunnitelma, 2x kuukaudessa tulosten seuranta ja konsultaatio, rajoitettu chättituki",
                 "price": "30",
                 "priceCurrency": "EUR",
-                "priceValidUntil": "2024-12-31"
+                "priceValidUntil": "2024-12-31",
+                "availability": "https://schema.org/Discontinued"
             },
             {
                 "@type": "Offer",
@@ -150,7 +161,15 @@
                         <img src="images/silver.png" class="card-img-top mx-auto d-block p-4" alt="Silver" style="width: 50%; object-fit: cover;">
                         <div class="card-body flex-grow-1 d-flex flex-column">
                             <h3 class="card-title">Silver</h3>
-                            <p class="text-primary h5 mb-4">30€/kk</p>
+                            <!-- <p class="text-primary h5 mb-4">30€/kk</p> -->
+                            <div class="mb-4">
+                                <p class="text-decoration-line-through text-muted mb-1">30€/kk</p>
+                                <p class="text-success h4 mb-0">
+                                    <strong>ILMAINEN!</strong>
+                                    <span class="badge bg-danger ms-2">Black Friday</span>
+                                </p>
+                                <p class="text-muted small">Ensimmäisille 20 henkilölle<br>Voimassa: 20.11 - 4.12.2025</p>
+                            </div>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Treeniohjelma</li>
                                 <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Ruokasuunnitelma</li>

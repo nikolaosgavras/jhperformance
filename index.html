@@ -243,9 +243,66 @@
         </div>
     </footer>
 
+    <!-- Black Friday Popup Modal -->
+    <div class="modal fade" id="blackFridayModal" tabindex="-1" aria-labelledby="blackFridayModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content black-friday-modal">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-5">
+                    <div class="black-friday-icon mb-4">
+                        <i class="fas fa-fire fa-4x text-warning"></i>
+                    </div>
+                    <h2 class="display-5 fw-bold text-dark mb-3">
+                        BLACK FRIDAY TARJOUS!
+                    </h2>
+                    <div class="mb-4">
+                        <p class="h4 text-warning mb-3">
+                            <strong>Silver-paketti ILMAISEKSI</strong>
+                        </p>
+                        <p class="text-dark lead">
+                            Ensimmäisille 20 henkilölle!
+                        </p>
+                    </div>
+                    <div class="offer-details mb-4">
+                        <p class="text-dark-50 mb-2">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            Voimassa: 20.11.2025 - 4.12.2025
+                        </p>
+                        <p class="text-dark-50 mb-0">
+                            <i class="fas fa-gift me-2"></i>
+                            Ei pitkiä sitoumuksia
+                        </p>
+                    </div>
+                    <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3">
+                        <i class="fas fa-bolt me-2"></i>Lunasta tarjous nyt!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    
+    <!-- Black Friday Popup Script -->
+    <script>
+        // Check if it's within the Black Friday period and if popup hasn't been shown
+        const today = new Date();
+        const startDate = new Date('2025-11-19');
+        const endDate = new Date('2025-12-04');
+        
+        if (today >= startDate && today <= endDate) {
+            
+                // Show popup after 2 seconds
+                setTimeout(function() {
+                    const modal = new bootstrap.Modal(document.getElementById('blackFridayModal'));
+                    modal.show();
+                }, 2000);
+            }
+    </script>
 </body>
 </html> 
