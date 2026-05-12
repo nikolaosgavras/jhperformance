@@ -58,19 +58,3 @@ A professional website for JH Performance, featuring information about services,
 
 - Apache web server with mod_rewrite enabled (for .htaccess support)
 - Support for static file serving
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is proprietary and confidential. All rights reserved.
-
-## Contact
-
-For any inquiries, please use the contact form on the website or reach out through the provided contact information. 
